@@ -1,0 +1,28 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Screamify</title>
+    <link href="{% static 'core/css/styles.css' %}" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>Screamify</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Movies</a></li>
+                <li><a href="#">Reviews</a></li>
+                <li><a href="#">About</a></li>
+            </ul>
+        </nav>
+    </header>
+    {% block body %}
+    {% endblock %}
+</body>
+</html>
