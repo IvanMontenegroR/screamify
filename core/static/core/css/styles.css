@@ -1,61 +1,68 @@
-/* layout.html */
 
-header {
-    display: flex; /* Use flexbox to arrange children horizontally */
-    justify-content: space-between; /* Distribute content evenly */
-    align-items: center; /* Vertically align children in the middle */
-    background-color: red; /* Background color for the header */
-    color: #fff; /* Text color for the header */
-    padding: 10px 20px; /* Add padding for spacing */
+.vertical-center {
+    display: flex;
+    align-items: center;
+    height: 100%; /* Ensure it takes full vertical space */
 }
 
-.logo {
-    display: inline; /* Display the logo inline */
-}
-
-nav {
-    display: inline; /* Display the navigation inline */
-}
-
-nav ul {
-    list-style: none; /* Remove default list bullets */
-    margin: 0; /* Remove default margin */
-    padding: 0; /* Remove default padding */
-}
-
-nav ul li {
-    display: inline; /* Display navigation items inline */
-    margin-right: 20px; /* Add spacing between items */
-}
-
-nav ul li:last-child {
-    margin-right: 0; /* Remove right margin for the last item */
-}
-
-/* index.html */
-.carousel-container {
-    width: 100%; /* Adjust the width based on your layout needs */
-    padding-top: 50.46%; /* (773 / 1530) * 100% to maintain the aspect ratio */
-    position: relative;
-    background-image: url('/static/core/images/hero-main.jpg'); /* Image URL */
-    background-size: cover;
-    background-position: center;
+#hero-container{
+    background-color: red;
+    background-image: url('/static/core/images/hero-main.jpg');
     background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 25%;
+    padding-bottom: 5%;
 }
 
+
+
+#movie-carousel{
+    background-color: red;
+    
+}
+
+/* Your custom CSS */
 .movie-card {
-    background-image: url('/static/core/images/movie-card.png');
+    width: 175px;
+    height: 250px;
+    transition: all 0.3s ease;
+    position: relative;
+    
+    
+}
+
+.movie-card:hover {
+    width: 184.5px; /* Grows in width by 50% */
+    height: 262.5px; /* Grows in height by 50% */
+}
+
+.movie-card-inner {
+    width: 100%;
+    height: 100%;
+}
+
+.movie-card-image {
+    width: 100%;
+    height: 100%;
     background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-color: #fff;
+    position: absolute;
     border-radius: 5px;
-    padding: 20px;
+    
+}
+
+.movie-card-details {
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     text-align: center;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-    margin: 10px; /* Add spacing between cards */
-    width: 126px; /* Width of each card */
-    height: 180px; /* Height of each card */
-    display: inline-block; /* Display cards inline horizontally */
-    margin-right: 10px; /* Add spacing between cards */
+    background: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    padding: 10px;
+    width: 80%;
+}
+
+.movie-card:hover .movie-card-details {
+    display: block;
 }
