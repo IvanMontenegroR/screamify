@@ -1,3 +1,7 @@
+header {
+    padding-top: 1rem;
+    margin-bottom: -6rem;
+}
 
 .vertical-center {
     display: flex;
@@ -6,19 +10,11 @@
 }
 
 #hero-container{
-    background-color: red;
-    background-image: url('/static/core/images/hero-main.jpg');
+    background-image: url('/static/core/images/hero-horror.jpg');
     background-repeat: no-repeat;
     background-size: cover;
-    padding-top: 25%;
+    padding-top: 30%;
     padding-bottom: 5%;
-}
-
-
-
-#movie-carousel{
-    background-color: red;
-    
 }
 
 /* Your custom CSS */
@@ -27,8 +23,6 @@
     height: 250px;
     transition: all 0.3s ease;
     position: relative;
-    
-    
 }
 
 .movie-card:hover {
