@@ -1,6 +1,20 @@
+h3{
+    padding-bottom: 2.5%;
+    color: white;
+}
+
 header {
-    padding-top: 1rem;
-    margin-bottom: -6rem;
+    padding-top: 1.5rem;
+    margin-bottom: -5rem;
+}
+
+#logo-image {
+    max-width: 25%; /* Adjust the size as needed */
+    height: auto;
+}
+
+.nav-link{
+    color:white;
 }
 
 .vertical-center {
@@ -9,25 +23,29 @@ header {
     height: 100%; /* Ensure it takes full vertical space */
 }
 
+
 #hero-container{
-    background-image: url('/static/core/images/hero-horror.jpg');
+    background-image: url('/static/core/images/hero-horror-blurred.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     padding-top: 30%;
     padding-bottom: 5%;
+    transition: background-image 0.3s ease; /* Add this line for smooth transition */
+
 }
+
 
 /* Your custom CSS */
 .movie-card {
-    width: 175px;
-    height: 250px;
+    width: 185px;
+    height: 260px;
     transition: all 0.3s ease;
     position: relative;
 }
 
 .movie-card:hover {
-    width: 184.5px; /* Grows in width by 50% */
-    height: 262.5px; /* Grows in height by 50% */
+    width: 195px; /* Grows in width by 50% */
+    height: 270px; /* Grows in height by 50% */
 }
 
 .movie-card-inner {
@@ -51,12 +69,26 @@ header {
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
-    background: rgba(0, 0, 0, 0.8);
+    background: rgba(0, 0, 0, 0.4);
     color: #fff;
     padding: 10px;
-    width: 80%;
+    width: 100%;
+    height: 100%;
+}
+
+.movie-title{
+    padding-bottom: 10%;
 }
 
 .movie-card:hover .movie-card-details {
     display: block;
+}
+
+.read-more-button {
+    width: 126px;
+    height: 36px;
+    border-radius: 5px;
+    background-color: #063f3d;
+    color: white;
+    padding: 8px 25px 8px 25px;
 }
